@@ -7,7 +7,7 @@ This is for the implementation of Medical Team Leader, one of the SAR agents for
 https://docs.google.com/spreadsheets/d/1QZK5HAdDC-_XNui6S0JZTbJH5_PbYJTp8_gyhXmz8Ek/edit?usp=sharing
 https://docs.google.com/spreadsheets/d/11rBV9CbKNeQbWbaks8TF6GO7WcSUDS_-hAoH75UEkgQ/edit?usp=sharing
 
-To run, just install the depencies and set up your environment variables. Then, run the cells for `medical_agent_lead.ipynb` in `src/sar_project/agents`. 
+To run, just install the depencies and set up your environment variables (see below for instructions). Then, run the cells for `medical_agent_lead.ipynb` in `src/sar_project/agents`. 
 The query for the agent will be through the `answer_question` function. 
 
 The agent is an attempt at implementing RAG. There are three PDF files that it draws from. One for help in triaging, one as a medical guide, and one with some sample data 
