@@ -2,3 +2,10 @@ pyautogen
 python-dotenv
 pytest
 autogen
+langchain
+langchain-community 
+langchain-openai 
+langchain-core
+python-dotenv
+pymupdf
+chromadb
