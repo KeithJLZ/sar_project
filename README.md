@@ -57,3 +57,9 @@ pip install -e .
     ```
 
 Make sure to keep your `.env` file private and never commit it to version control.
+
+## A3 -- Insights
+I was the only person who did not get feedback on my implementation. Thus, I came up with a few improvements on my own. I asked Professor Kurfess if the improvements would be okay, and he said they were fine. I wasn't sure if it would be enough, but Professor Kurfess said he didn't see if there would be much more I could realistically improve on. I am not technically sure I did learn anything. The improvements I implemented were ones I already thought of for A1, but felt that it wasn't super necessary to implement at the time. The main improvement I could think of was how to make it better at acquiring information and consolidating that information. Therefore, in A1, I asked it to create 3 subquestions to help answer the main question. I then removed duplicates. To improve upon that, I figured that perhaps ranking the documents retrieved on how helpful they would be could improve response quality. Then, based on the difficulty of the question, it may create more or less than just the constant 3 subquestions.
+
+## A3 -- Modifications
+Based on the insights, there were two modifications I made. Back when I was first creating the agent, I stumbled across something called RAG fusion that I thought might be helpful in ranking. I kept that in my notes. For A3, implementing it was actually relatively simple, as it turned out to be a simple scoring system where the first documents to appear got more points, and it was an additive system. Therefore, if documents appeared multiple times and appeared earlier in the vector search, they would rank higher. After using that to rank the documents, I rewrote some templates to the agents in order to take advantage of that as well as dynamically deciding the number of subquestions to create based on the main user query. 
